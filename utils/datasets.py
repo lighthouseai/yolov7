@@ -383,7 +383,7 @@ class LoadImagesAndLabels(Dataset):  # for training/testing
             # self.img_files = sorted([x for x in f if x.suffix[1:].lower() in img_formats])  # pathlib
             assert self.img_files, f'{prefix}No images found'
         except Exception as e:
-            raise Exception(f'{prefix}Error loading data from {path}: {e}\nSee {help_url}')
+            raise Exception(f'{prefix}Error loading data from {path}: {p} {e}\nSee {help_url}')
 
         # Check cache
         self.label_files = img2label_paths(self.img_files)  # labels

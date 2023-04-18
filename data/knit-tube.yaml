@@ -1,0 +1,24 @@
+# COCO 2017 dataset http://cocodataset.org
+
+# download command/URL (optional)
+# download: bash ./scripts/get_coco.sh
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: /home/countai/Pictures/data/knitting/tubular/14-04-2023/YOLODataset/images/train/  # 118287 images
+val: /home/countai/Pictures/data/knitting/tubular/14-04-2023/YOLODataset/images/val/  # 5000 images
+test: /home/countai/Pictures/data/knitting/tubular/14-04-2023/YOLODataset/images/test/  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+
+
+# path: /home/countai/Projects/venkat/temp/runs/labelme2coco  # dataset root dir
+# train: /home/countai/Projects/venkat/temp/runs/labelme2coco/train  # train images (relative to 'path') 128 images
+# val: /home/countai/Projects/venkat/temp/runs/labelme2coco/val # val images (relative to 'path') 128 images
+
+
+
+# number of classes
+nc: 10
+
+# class names
+
+names: ['bluemark', 'small_hole', 'count_mix', 'oil', 'wild_yarn', 'flower_dot', 'needln', 'cut_line', 'double_yarn',  'big_hole']
